@@ -29,10 +29,10 @@ public class Controls : MonoBehaviour
     public float maxHealth = 50;
     float SpeedForLerp; // our lerp we'll use for changing meter
 
-    public int[] gearThresholds = { 1000, 3000, 4000, 5000, 8000 }; // Define the RPM threshold for each gear
+    public int[] gearThresholds = { 1000, 3000, 4000, 5000, 8000 }; //  the RPM threshold for each gear
 
     
-    public int maxGears = 5; // Define the maximum number of gears
+    public int maxGears = 5; //  the max number of gears
 
 
 
@@ -41,6 +41,7 @@ public class Controls : MonoBehaviour
     void Start()
     {
         currentHealth = 50;
+        //sets up rpm danger float to be used
         RpmDanger = .2f;
 
     }
@@ -90,7 +91,7 @@ public class Controls : MonoBehaviour
             SpeedCounter -= Brake * Time.deltaTime;
         }
 
-        SpeedCounter = Mathf.Clamp(SpeedCounter, 0f, 200);
+        SpeedCounter = Mathf.Clamp(SpeedCounter, 0f, 210);
     }
 
     public float CalculateWheelRpm(float speedMph, float tireDiameterInches)

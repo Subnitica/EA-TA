@@ -8,19 +8,19 @@ public class nitrous: MonoBehaviour
 {
 
     public Image TypicalN;
-    public float currentNitrous = 50;
-    public float maxNitrous = 50;
-    float maxBurst = 5.0f;
-    float SpeedForLerp;
+    public float currentNitrous = 50;// our current nitrous
+    public float maxNitrous = 50; // max nitrous 
+    float maxBurst = 5.0f; // float for max burst nitrous
+    float SpeedForLerp; // what the name says lol :P
     public int DelayAmount = 1; // Second count
-    private float Timer;
+    private float Timer; // timer for filling nitrous bar
     private bool Waiting = false;
-    public bool BurstWaiting = false;
+    public bool BurstWaiting = false;// bool to see if we're waiting on the delay between filling burst bars
     public Image Burst;
-    public float maxTime = 5f;
-    public float timeLeft;
-    public int BurstActives = 0;
-    bool inUsage = false;
+    public float maxTime = 5f; // max time for burst
+    public float timeLeft; // time left for burst nitrous
+    public int BurstActives = 0; // how many bursts we have
+    bool inUsage = false; //  if burst is currently in use
     public int count = 0;
     private bool[] counted = new bool[3];
 
