@@ -27,6 +27,7 @@ public class RPMmeter : MonoBehaviour
     void Update()
     {
         //changes rpm based off the rpm in controller
+        Debug.Log(ControlsManager.rpm);
         SafeRpm.fillAmount = ControlsManager.rpm / 10000;
 
 
